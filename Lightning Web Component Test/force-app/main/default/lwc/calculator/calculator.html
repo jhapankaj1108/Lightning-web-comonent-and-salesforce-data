@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <h3 class="id" slot="title">Calculator</h3>
+        <lightning-input type="number" name="fNumber" label="Enter First Number" onchange={handleChange} ></lightning-input>
+        <lightning-input type="number" name="sNumber" label="Enter Second Number" onchange={handleChange}></lightning-input>
+        <div>
+        <label>{result}</label>
+        </div>
+
+       <lightning-button-group>
+       <lightning-button label="+" onclick={handleClick}></lightning-button>
+       <lightning-button label="-" onclick={handleClick}></lightning-button>
+       <lightning-button label="*" onclick={handleClick}></lightning-button>
+       <lightning-button label="/" onclick={handleClick}></lightning-button>
+   </lightning-button-group>
+
+</lightning-card>
+</template>
